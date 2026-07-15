@@ -1,19 +1,40 @@
-# 🎯 VisionLock-AI
+# 🛡️ VisionLock-AI
 
-A real-time AI-based Smart Surveillance System built using **YOLOv8**, **ByteTrack**, **OpenCV**, and **Streamlit**. The system detects and tracks multiple objects, allows users to lock onto a target, and displays real-time tracking information.
+## Multi-Modal Intelligent Surveillance Platform
+
+VisionLock-AI is a real-time AI-powered surveillance platform that combines **RGB object detection**, **thermal human detection**, **multi-object tracking**, and **target locking** into a single intelligent system.
+
+The platform leverages **Ultralytics YOLO**, **ByteTrack**, **OpenCV**, and **Streamlit** to perform real-time analysis on both RGB and thermal imagery, making it suitable for smart surveillance, security monitoring, and AI vision applications.
 
 ---
 
 ## 🚀 Features
 
-- 🎥 Real-time object detection using YOLOv8
-- 🔄 Multi-object tracking using ByteTrack
-- 🎯 Target locking based on Tracking ID
-- 📍 Real-time X & Y offset calculation
-- 🔍 Target zoom feature
-- 📊 Confidence score display
-- 🖥️ Streamlit web application
-- 📹 Video upload and processing
+### 🟢 RGB Vision
+
+- Real-time object detection
+- Multi-object tracking using ByteTrack
+- Target locking using Tracking ID
+- Live target offset calculation
+- Zoomed target view
+- Confidence score visualization
+
+### 🔥 Thermal Vision
+
+- Thermal human detection
+- Thermal video surveillance
+- Real-time human tracking
+- Support for pretrained thermal YOLO model
+- Thermal image inference
+- Thermal video inference
+
+### 💻 Dashboard
+
+- Streamlit-based user interface
+- Image & video upload
+- Multiple AI modules
+- Interactive controls
+- Real-time visualization
 
 ---
 
@@ -28,16 +49,41 @@ A real-time AI-based Smart Surveillance System built using **YOLOv8**, **ByteTra
 
 ---
 
+## 🧠 AI Modules
+
+| Module | Description |
+|---------|-------------|
+| RGB Object Detection | Detects multiple objects in RGB videos |
+| RGB Target Tracking | Tracks objects using ByteTrack |
+| Target Locking | Locks onto a selected target and calculates offset |
+| Thermal Human Detection | Detects humans from thermal images |
+| Thermal Video Tracking | Detects and tracks humans in thermal videos |
+
+---
+
 ## 📂 Project Structure
 
-```
+```text
 VisionLock-AI/
-│── app.py
-│── main.py
-│── input_video.mp4
-│── requirements.txt
-│── README.md
-│── .gitignore
+│
+├── app.py
+├── rgb_target_tracking.py
+├── rgb_surveillance.py
+├── thermal_detection.py
+├── thermal_tracking.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── models/
+│   ├── yolov8n.pt
+│   ├── thermal_yolo.pt
+│   ├── best.pt
+│   └── best1.pt
+│
+├── sample_inputs/
+│
+└── sample_outputs/
 ```
 
 ---
@@ -59,15 +105,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run Desktop Version
-
-```bash
-python main.py
-```
-
----
-
-## ▶️ Run Streamlit Version
+## ▶️ Run Application
 
 ```bash
 streamlit run app.py
@@ -75,21 +113,50 @@ streamlit run app.py
 
 ---
 
+## 📸 Demo
 
+The repository includes demonstration videos showcasing:
+
+- RGB Object Detection
+- Target Locking
+- Thermal Human Detection
+- Thermal Video Tracking
 
 ---
 
-## 🎯 Future Improvements
+## 📈 Future Improvements
 
-- Mouse-click target selection in Streamlit
-- Object re-identification
-- Live webcam support in Streamlit
-- Detection history logging
-- MySQL integration
-- Dashboard analytics
+- Face Recognition
+- Automatic Threat Detection
+- Fire & Smoke Detection
+- License Plate Recognition
+- Drone Camera Support
+- Person Re-identification
+- Cloud Deployment
+- SQL Database Integration
+- Analytics Dashboard
+- Event Logging & Report Generation
+
+---
+
+## 🎯 Applications
+
+- Smart City Surveillance
+- Railway Safety Monitoring
+- Border Security
+- Industrial Safety
+- Military Surveillance
+- Wildlife Monitoring
+- Critical Infrastructure Protection
 
 ---
 
 ## 👩‍💻 Author
 
 **Mansi Nirbhavane**
+
+Computer Engineering | AI/ML | Computer Vision | Deep Learning
+
+---
+
+⭐ If you found this project useful, consider giving it a Star!
