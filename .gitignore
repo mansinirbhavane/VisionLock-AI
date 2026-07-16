@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .venv/
 *.pt
+# Logs
+logs/
+
+# Personal screen recordings
+Screen Recording*.mp4
